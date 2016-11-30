@@ -52,7 +52,15 @@ longestTransition(element)
 ```
 
 - `element`: The element that is transitioning.
-- Returns a number, in seconds.
+- Returns an object in the format below.
+
+```js
+{
+    property: 'height',
+    duration: 200, // milliseconds
+    delay: 100  // milliseconds
+}
+```
 
 ## Tests
 

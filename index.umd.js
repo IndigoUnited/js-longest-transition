@@ -4,21 +4,20 @@
 function __readTransitions(el) {
     var styles = getComputedStyle(el);
     var properties = styles.transitionProperty.replace(' ', '').split(',');
-    var durations = styles.transitionDuration.replace(' ', '').split(',').map(__parseInt);
-    var delays = styles.transitionDelay.replace(' ', '').split(',').map(__parseInt);
+    var durations = styles.transitionDuration.replace(' ', '').split(',').map(_parseFloat);
+    var delays = styles.transitionDelay.replace(' ', '').split(',').map(_parseFloat);
 
     return properties.map(function __handleMapProperties(prop, i) {
         return {
             property: prop,
-            duration: durations[i] || durations[0] || 0,
-            delay: delays[i] || delays[0] || 0,
+            duration: Math.ceil((durations[i] || durations[0] || 0) * 1000),
+            delay: Math.ceil((delays[i] || delays[0] || 0) * 1000),
         };
     });
 }
 
 function longestTransition(el) {
     var longest = __readTransitions(el).reduce(function __handleReduceTransitions(prev, curr) {
-        console.log(curr);
         if (!prev) {
             return curr;
         }
@@ -29,8 +28,8 @@ function longestTransition(el) {
     return longest;
 }
 
-function __parseInt(x) {
-    return parseInt(x, 10);
+function _parseFloat(x) {
+    return parseFloat(x, 10);
 }
 
 module.exports = longestTransition;
