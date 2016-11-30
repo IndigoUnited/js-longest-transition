@@ -1,0 +1,39 @@
+{
+  "name": "longest-transition",
+  "version": "0.1.0",
+  "description": "Cross-browser longest transition getter",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint '{*.js,test/**/*.js}' --ignore-pattern=test/coverage",
+    "test": "mocha --bail",
+    "test-cov": "istanbul cover --dir test/coverage _mocha -- --bail && echo Coverage lies in test/coverage/lcov-report/index.html",
+    "test-travis": "istanbul cover _mocha --report lcovonly -- --bail && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "browserify": "browserify -s longest-transition index.js > index.umd.js"
+  },
+  "bugs": {
+    "url": "https://github.com/IndigoUnited/js-longest-transition/issues/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IndigoUnited/js-longest-transition.git"
+  },
+  "keywords": [
+    "transition",
+    "duration",
+    "delay",
+    "longest",
+    "highest"
+  ],
+  "author": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@satazor/eslint-config": "^3.0.0",
+    "browserify": "^13.1.1",
+    "chai": "^3.4.1",
+    "coveralls": "^2.11.6",
+    "eslint": "^3.0.0",
+    "istanbul": "^0.4.1",
+    "mocha": "^3.0.2"
+  }
+}
