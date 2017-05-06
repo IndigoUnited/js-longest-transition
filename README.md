@@ -11,7 +11,7 @@
 [coveralls-image]:https://img.shields.io/coveralls/IndigoUnited/js-longest-transition/master.svg
 [david-dm-url]:https://david-dm.org/IndigoUnited/js-longest-transition
 [david-dm-image]:https://img.shields.io/david/IndigoUnited/js-longest-transition.svg
-[david-dm-dev-url]:https://david-dm.org/IndigoUnited/js-longest-transition#info=devDependencies
+[david-dm-dev-url]:https://david-dm.org/IndigoUnited/js-longest-transition?type=dev
 [david-dm-dev-image]:https://img.shields.io/david/dev/IndigoUnited/js-longest-transition.svg
 
 Cross-browser longest transition getter.
