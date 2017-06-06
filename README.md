@@ -1,6 +1,6 @@
 # longest-transition
 
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url] [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
 [npm-url]:https://npmjs.org/package/longest-transition
 [downloads-image]:http://img.shields.io/npm/dm/longest-transition.svg
@@ -13,6 +13,8 @@
 [david-dm-image]:https://img.shields.io/david/IndigoUnited/js-longest-transition.svg
 [david-dm-dev-url]:https://david-dm.org/IndigoUnited/js-longest-transition?type=dev
 [david-dm-dev-image]:https://img.shields.io/david/dev/IndigoUnited/js-longest-transition.svg
+[greenkeeper-image]:https://badges.greenkeeper.io/IndigoUnited/js-longest-transition.svg
+[greenkeeper-url]:https://greenkeeper.io/
 
 Cross-browser longest transition getter.
 
